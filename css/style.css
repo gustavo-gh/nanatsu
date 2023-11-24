@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #323232;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 42px;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    width: 180px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #7F22F6;
+    height: 9vh;
+    box-shadow: 0 0 20px -5px black;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    height: 30px;
+    letter-spacing: 3px;
+    margin-left: 32px;
+    font-size: 24px;
+}
+
+.nav-list li:hover {
+    border-bottom: 3px solid pink;
+}
+
+.meliodas {
+    color: yellow;
+}
+
+.ban {
+    color: red;
+}
+
+.king {
+    color: greenyellow;
+}
+
+.gowther {
+    color: plum;
+}
+
+.escanor {
+    color: rgb(255, 204, 0);
+}
+
+.diane {
+    color: orange;
+}
+
+.merlin {
+    color: purple;
+}
+
+.container {
+    position: relative;
+}
+
+.containter, .slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 5%;
+    padding-bottom: 70px;
+}
+
+.containter, .slide-container, .slide, .content {
+    flex: 1 1 350px;
+}
+
+.containter, .slide-container, .slide, .content h2 {
+    font-size: 50px;
+}
+
+.containter, .slide-container, .slide, .content p {
+    font-size: 19px;
+    color: #ffffff;
+    width: 47%;
+    height: 10%;
+    text-shadow: 2px 2px 2px #323232;
+    font-weight: 500;
+}
+
+.container, .slide-container {
+    display: none;
+}
+
+.container, .slide-container.active {
+    display: flex;
+}
+
+.container, .slide-container:nth-child(1) .slide {
+    background: url(/img/meliodas.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container, .slide-container:nth-child(2) .slide {
+    background: url(/img/ban.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container, .slide-container:nth-child(3) .slide {
+    background: url(/img/king.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container, .slide-container:nth-child(4) .slide {
+    background: url(/img/gowther.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container, .slide-container:nth-child(5) .slide {
+    background: url(/img/escanor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container, .slide-container:nth-child(6) .slide {
+    background: url(/img/diane.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container, .slide-container:nth-child(7) .slide {
+    background: url(/img/merlin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container #prev, 
+.container #next {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background: #f3df47;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.container #prev:hover, 
+.container #next:hover{
+    background: #a8950c
+}
+.container #prev{
+    left: 20px;
+}
+
+.container #next{
+    right: 20px;
+}
+
